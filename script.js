@@ -57,6 +57,6 @@ document.querySelector('.check').addEventListener('click', function(){
         }
     }
 
-// This is a github repo check
+// This is a github repo check branch
     // console.log(document.querySelector('.message').textContent);
 })
