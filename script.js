@@ -27,6 +27,9 @@ document.querySelector('.check').addEventListener('click', function(){
     if(!inputtedValue){
         document.querySelector('.message').innerText = "NO number ⛔";
     } else if(secretNumber === inputtedValue){
+
+        // When guess = secretNumber
+
         if(totalScore > 1){
         document.querySelector('.message').innerText = "Correct choice ✅";
         }
@@ -59,4 +62,13 @@ document.querySelector('.check').addEventListener('click', function(){
 
 // This is a github repo check branch
     // console.log(document.querySelector('.message').textContent);
+})
+
+document.querySelector('.btn').addEventListener('click', function(){
+    secretNumber = Math.trunc(Math.random()*20)+1;
+    totalScore = 20;
+    document.querySelector('.score').innerText = 20;
+    document.querySelector('.number').innerText = "?";
+    document.querySelector('.guess').value = '';
+    document.querySelector('.message').innerText = "Start Guessing ...";
 })
